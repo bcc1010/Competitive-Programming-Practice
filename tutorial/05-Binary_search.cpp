@@ -72,3 +72,8 @@ int searchRotated(const vector<int>& arr, int target) {
     }
     return -1;
 }
+
+// The most important and underused application of binary search is that many
+// problems (even those not mentioning a sorted array) can be solved with
+// binary search, by searching on the space of possible answers instead of the
+// input array.
