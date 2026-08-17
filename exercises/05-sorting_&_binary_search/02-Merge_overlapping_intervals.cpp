@@ -4,7 +4,8 @@
 using std::vector;
 using std::pair;
 
-vector<pair<int, int>> mergeOverlappingIntvls(vector<pair<int, int>> intervals) {
+vector<pair<int, int>> mergeOverlappingIntvls(const vector<pair<int, int>>& given_intervals) {
+    vector<pair<int, int>> intervals = given_intervals;
     std::sort(intervals.begin(), intervals.end());
     vector<pair<int, int>> res;
 
@@ -18,7 +19,7 @@ vector<pair<int, int>> mergeOverlappingIntvls(vector<pair<int, int>> intervals) 
     return res;
 }
 
-void outputRes(vector<pair<int, int>> res) {
+void outputRes(const vector<pair<int, int>>& res) {
     std::cout << '[';
     bool first = true;
     for (const auto& curr : res) {
