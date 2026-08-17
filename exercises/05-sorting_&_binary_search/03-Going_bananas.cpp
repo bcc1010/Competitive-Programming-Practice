@@ -6,10 +6,7 @@ using std::vector;
 bool canEat(const vector<int>& piles, int h, int k) {
     int hNeeded = 0;
     for (int p : piles) {
-        while (p > 0) {
-            p -= k;
-            hNeeded++;
-        }
+        hNeeded += (p + k - 1) / k;
     }
     return hNeeded <= h;
 }
