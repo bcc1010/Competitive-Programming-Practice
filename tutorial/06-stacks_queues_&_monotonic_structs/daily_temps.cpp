@@ -1,7 +1,6 @@
 // Problem: given an array of daily temperatures, return an array where each
 // element is the number of days you have to wait until a warmer temperature.
 // If no warmer day exists, return 0.
-#include <iostream>
 #include <vector>
 #include <stack>
 using std::vector;
