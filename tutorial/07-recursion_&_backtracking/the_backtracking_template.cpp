@@ -32,3 +32,12 @@
 // //      Each edge is a choice.
 // //      Leaves are complete solutions (or dead ends).
 // //      Backtracking means returning from a node and trying a different edge.
+
+// // WAY TO REMEMBER:
+// // Backtracking is BICHECHORU
+// // B    ase case
+// // I    teration
+// // CHE  ck
+// // CHO  ice
+// // R    ecurse
+// // U    ndo
