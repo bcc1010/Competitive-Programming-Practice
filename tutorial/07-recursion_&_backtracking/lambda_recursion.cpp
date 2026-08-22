@@ -14,7 +14,7 @@ vector<vector<int>> subsets(const vector<int>& nums) {
             backtrack(i + 1);
             curr.pop_back();
         }
-    }
+    };
 
     backtrack(0);
     return res;
